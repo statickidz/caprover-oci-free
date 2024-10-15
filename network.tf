@@ -184,6 +184,17 @@ resource "oci_core_security_list" "caprover_security_list" {
     description = "Allow Docker Swarm UDP traffic on port 4789"
   }
 
+  # CapRover Self-Hosted Registry
+  ingress_security_rules {
+    protocol = "6" # TCP
+    source   = "0.0.0.0/0"
+    tcp_options {
+      min = 996
+      max = 996
+    }
+    description = "Allow Self-Hosted Registry HTTP traffic on port 996"
+  }
+
   # Egress Rule (optional, if needed)
   egress_security_rules {
     protocol    = "all"
