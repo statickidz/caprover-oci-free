@@ -3,5 +3,5 @@ output "caprover_dashboard" {
 }
 
 output "caprover_worker_ips" {
-  value = [for instance in oci_core_instance.caprover_worker : "${instance.public_ip} (user it to add the server in CapRover Dashboard)"]
+  value = [for instance in oci_core_instance.caprover_worker : "${instance.public_ip} (use it to add the server in CapRover Dashboard)"]
 }
