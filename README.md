@@ -2,6 +2,12 @@
 
 This Terraform project deploys a CapRover instance in Oracle Cloud Infrastructure (OCI) Free Tier. **CapRover** is an open-source platform to manage your app deployments, offering simple one-click setups for various services.
 
+## Deploy
+
+[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/statickidz/caprover-oci-free/archive/refs/heads/main.zip)
+
+*Clicking the "Deploy to Oracle Cloud" button will load the Oracle Cloud Resource Manager to deploy the infrastructure described in this Terraform project. During deployment, you'll be prompted to configure the stack parameters. Review the settings, then launch the stack deployment.*
+
 ## About CapRover
 
 ![CapRover Logo](doc/caprover-cover.png)
@@ -26,12 +32,6 @@ Before you begin, ensure you have the following:
 
 -   An Oracle Cloud Infrastructure (OCI) account with Free Tier resources available.
 -   An SSH public key for accessing the instances.
-
-## Deploy
-
-[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/statickidz/caprover-oci-free/archive/refs/heads/main.zip)
-
-_Clicking the "Deploy to Oracle Cloud" button will initiate the deployment of CapRover on OCI through the Resource Manager._
 
 ## Project Structure
 
