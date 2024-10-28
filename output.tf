@@ -1,5 +1,5 @@
 output "caprover_dashboard" {
-  value = "http://${oci_core_instance.caprover_main.public_ip}:3000/ (wait 3-5 minutes to finish CapRover installation)"
+  value = "http://${oci_core_instance.caprover_main.public_ip}:3000/ (wait 3-5 minutes to finish CapRover installation) (default password: captain42)"
 }
 
 output "caprover_worker_ips" {
